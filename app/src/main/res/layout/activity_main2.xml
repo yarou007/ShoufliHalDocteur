@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/parag2"
+        android:layout_width="327dp"
+        android:layout_height="72dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="528dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="12sp"
+        android:textSize="12dp"
+        android:textColor="#79859D"
+        android:text="Vous souhaitez prendre rendez-vous ?"
+        android:translationY="-4.37sp" />
+
+    <TextView
+        android:id="@+id/parag3"
+        android:layout_width="327dp"
+        android:layout_height="72dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="551dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="12sp"
+        android:text="Plus besoin de vous déplacer, réservez et gérez vos rendez-vous depuis chez vous."
+        android:textColor="#79859D"
+        android:textSize="12dp"
+        android:translationY="-4.37sp" />
+
+    <ImageView
+        android:id="@+id/LogoImg_1"
+        android:layout_width="248dp"
+        android:layout_height="126dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-27dp"
+        android:layout_marginTop="-1dp"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView_3"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="617dp"
+        app:srcCompat="@drawable/dots2" />
+
+    <ImageView
+        android:id="@+id/imageView_2"
+        android:layout_width="match_parent"
+        android:layout_height="283dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="0dp"
+        app:srcCompat="@drawable/background2" />
+
+    <TextView
+        android:id="@+id/text2"
+
+        android:layout_width="355dp"
+        android:layout_height="99dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="425dp"
+        android:fontFamily="@font/raleway_extrabold"
+        android:gravity="center_horizontal|top"
+        android:text="Réservez, Planifiez vos rendez-vous"
+        android:textColor="#6798E1"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:translationY="-5.91sp" />
+
+    <Button
+        android:id="@+id/suivant2"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#6798E1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:gravity="center_horizontal|top"
+        android:text="Suivant"
+        android:textSize="13dp" />
+
+    <Button
+        android:id="@+id/ignorer1"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="13dp"
+        android:backgroundTint="#457B7C7E"
+        android:gravity="center_horizontal|top"
+        android:text="ignorer"
+        android:textColor="#92000000"
+        android:textSize="13dp" />
+</RelativeLayout>
