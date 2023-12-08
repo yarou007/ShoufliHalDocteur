@@ -11,9 +11,9 @@ import android.widget.TextView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class WelcomingPage extends AppCompatActivity {
+public class Rendez_vous extends AppCompatActivity {
     FirebaseAuth auth;
-    Button button,btn_rdv;
+    Button button, btn_Home;
 
     TextView textView;
     FirebaseUser User;
@@ -21,30 +21,11 @@ public class WelcomingPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcoming_page);
-
-        btn_rdv = ( Button) findViewById(R.id.button6);
+        setContentView(R.layout.activity_rendez_vous);
         auth = FirebaseAuth.getInstance();
         button = findViewById(R.id.logout);
-        textView = findViewById(R.id.user_details);
         User = auth.getCurrentUser();
-
-        if(User==null){
-            Intent intent = new Intent(getApplicationContext(), MainActivity4.class);
-            startActivity(intent);
-            finish();
-        }
-        else {
-            textView.setText(User.getEmail());
-
-        }
-
-        btn_rdv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openRdvPage1();
-            }
-        });
+        btn_Home = ( Button ) findViewById(R.id.Home);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,11 +35,17 @@ public class WelcomingPage extends AppCompatActivity {
                 finish();
             }
         });
+
+        btn_Home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openHome();
+            }
+        });
     }
-    public void openRdvPage1(){
-        Intent intent = new Intent(this,Rendez_vous.class);
+    public void openHome(){
+        Intent intent = new Intent(this,WelcomingPage.class);
         startActivity(intent);
         finish();
     }
-
 }

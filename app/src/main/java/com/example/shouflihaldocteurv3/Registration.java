@@ -19,41 +19,32 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Registration extends AppCompatActivity {
-
     TextInputEditText editTextEmail,editTextPassword;
     private FirebaseAuth mAuth;
     ProgressBar progressBar;
-
     TextView textView;
-
     private Button connexion,inscription;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
-
-
         mAuth = FirebaseAuth.getInstance();
         editTextEmail = findViewById(R.id.emailR);
         editTextPassword= findViewById(R.id.passwordR);
         connexion = (Button) findViewById(R.id.connexion);
         inscription = (Button) findViewById(R.id.inscription);
-
         progressBar = findViewById(R.id.progressbar);
-
         // textView = findViewById(R.id.loginNow);
-
         connexion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openLogin();
             }
         });
-
-
         inscription.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // progress bar howa li yloadi comme ci
                 progressBar.setVisibility(View.VISIBLE);
                 String email,password;
                 // wala String.valueof();
@@ -81,19 +72,17 @@ public class Registration extends AppCompatActivity {
                                     Intent intent = new Intent(getApplicationContext(), WelcomingPage.class);
                                     startActivity(intent);
                                     finish();
-
                                 } else {
                                     // If sign in fails, display a message to the user.
                                     Toast.makeText(Registration.this, "Authentication failed.",
                                             Toast.LENGTH_SHORT).show();
-
                                 }
                             }
                         });
             }
         });
 }
-    public void openLogin(){
+public void openLogin(){
         Intent intent   = new Intent(this, MainActivity4.class);
         startActivity(intent); // Lancement de la deuxième activité
         // animation pour slide droit vers gauche

@@ -23,22 +23,23 @@ public class MainActivity4 extends AppCompatActivity {
 
     private Button inscription,connexion;
     TextInputEditText editTextEmail,editTextPassword;
-    FirebaseAuth mAuth;
-    ProgressBar progressBar;
+    FirebaseAuth mAuth; // Instance de l'authentification Firebase
+    ProgressBar progressBar; // Barre de progression pour la connexion
     TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
-
-        mAuth = FirebaseAuth.getInstance();
-        editTextEmail = findViewById(R.id.email);
-        editTextPassword = findViewById(R.id.password);
+        mAuth = FirebaseAuth.getInstance(); // instantiation mtaa l Auth FireBase
+        editTextEmail = findViewById(R.id.email); // Champs de texte pour l'email et le mot de passe
+        editTextPassword = findViewById(R.id.password);// Champs de texte pour password et le mot de passe
         connexion= findViewById(R.id.connexion);
         progressBar = findViewById(R.id.progressbar);
         textView = findViewById(R.id.inscription);
         inscription = ( Button) findViewById(R.id.inscription);
+
+        // Écouteur d'événement pour le bouton de connexion
 
         connexion.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,9 +47,12 @@ public class MainActivity4 extends AppCompatActivity {
                 progressBar.setVisibility(View.VISIBLE);
                 String email,password;
                 // wala String.valueof();
+
+                // Récupération des valeurs des champs de texte
                 email= editTextEmail.getText().toString();
                 password= editTextPassword.getText().toString();
 
+                // Validation des champs de texte
                 if (TextUtils.isEmpty(email)){
                     Toast.makeText(MainActivity4.this,"Enter Email",Toast.LENGTH_SHORT).show();
                     return;
@@ -57,6 +61,8 @@ public class MainActivity4 extends AppCompatActivity {
                     Toast.makeText(MainActivity4.this,"Enter password",Toast.LENGTH_SHORT).show();
                     return;
                 }
+
+                // Tentative de connexion avec Firebase
                 mAuth.signInWithEmailAndPassword(email, password)
                         .addOnCompleteListener( new OnCompleteListener<AuthResult>() {
                             @Override
@@ -75,7 +81,6 @@ public class MainActivity4 extends AppCompatActivity {
                                     // If sign in fails, display a message to the user.
                                     Toast.makeText(MainActivity4.this, "Authentication failed.",
                                             Toast.LENGTH_SHORT).show();
-
                                 }
                             }
                         });
@@ -90,7 +95,6 @@ public class MainActivity4 extends AppCompatActivity {
             // Ouvre la deuxième activité2
         });
     }
-
     public void openInscription(){
         // Création d'une intention pour ouvrir la deuxième activité
         // intent -> intention ( neya behs nhel )
