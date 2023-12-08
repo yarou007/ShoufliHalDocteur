@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+/*
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/cin"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="55dp"
+        android:ems="10"
+        android:backgroundTint="#FFFFFF"
+
+        android:hint="CIN"
+        android:inputType="text"
+        android:padding="8dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/username"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="128dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Nom d'utilisateur"
+        android:inputType="text"
+        android:padding="8dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/age"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="196dp"
+        android:ems="10"
+        android:hint="Age"
+        android:backgroundTint="#FFFFFF"
+
+        android:inputType="text"
+        android:padding="8dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailR"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="268dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:padding="8dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ntel"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#FFFFFF"
+
+        android:layout_centerInParent="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="364dp"
+        android:ems="10"
+        android:hint="Nº Tel"
+        android:padding="8dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordR"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="#FFFFFF"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="294dp"
+        android:ems="10"
+        android:hint="Mot de passe"
+
+        android:padding="8dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/cpwd"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="221dp"
+        android:ems="10"
+        android:hint="Confirmer Mot de passe"
+        android:padding="8dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="127dp"
+        android:text="J'ai lu et j'accepte les termes et conditions"
+        android:textColor="#79859D"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/inscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:backgroundTint="#6798E1"
+        android:text="S'inscrire" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginBottom="38dp"
+        android:text="Vous avez déja un compte ?"
+        android:textColor="#79859D"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/connexion"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="19dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="connexion"
+        android:textColor="#6798E1"
+        android:textStyle="bold" />
+
+    <ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/progressbar"
+    android:visibility="gone"
+    />
+
+</RelativeLayout>

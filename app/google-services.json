@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "764942869716",
+    "project_id": "shouflihaldocv2",
+    "storage_bucket": "shouflihaldocv2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764942869716:android:164639a64854ee8d18c741",
+        "android_client_info": {
+          "package_name": "com.example.shouflihaldocteurv3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpF7R7QCMH6830GsHo-jvnxuvQ7EXL4Qo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

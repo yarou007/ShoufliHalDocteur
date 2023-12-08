@@ -43,7 +43,7 @@ sur la façon d'améliorer votre santé en ligne ."
         android:layout_centerHorizontal="true"
         android:layout_marginStart="167dp"
         android:layout_marginTop="617dp"
-        app:srcCompat="@drawable/dots2" />
+        app:srcCompat="@drawable/dots3" />
 
     <ImageView
         android:id="@+id/imageView_3"

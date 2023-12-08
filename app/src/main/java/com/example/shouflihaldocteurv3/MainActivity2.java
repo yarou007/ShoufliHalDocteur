@@ -32,7 +32,7 @@ public class MainActivity2 extends AppCompatActivity {
         });
     }
     public void OpenActivity3(){
-        Intent intent   = new Intent(this, MainActivity3.class);
+        Intent intent   = new Intent(MainActivity2.this, MainActivity3.class);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in_right,R.anim.slide_in_left);
     }
