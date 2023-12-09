@@ -1,9 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Rendez_vous2">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="2dp"
+        android:alpha="1"
+        app:srcCompat="@drawable/greybox" />
+
+    <Button
+        android:id="@+id/Rdv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#BABABA"
+        android:text="Rendez-vous"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="#BABABA"
+
+        android:text="Logout"
+        android:textSize="18dp" />
+
+
+
+    <Button
+        android:id="@+id/Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="#BABABA"
+        android:text="Acceuil"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="115dp"
+        android:text="Rendez-vous"
+        android:textColor="#6798E1"
+        android:textSize="34dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="115dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="Dr. Cherif" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="169dp"
+        android:text="Location"
+        android:textColor="#6798E1"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="169dp"
+        app:srcCompat="@drawable/outline_add_location_24" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="221dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Date" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="29dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginBottom="368dp"
+        android:text="Horraire" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="265dp"
+        android:text="Votre plainte"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="265dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="256dp"
+        android:background="@drawable/custom_input3"
+        android:ems="10"
+        android:hint="Date de rendez-vous"
+        android:drawableEnd="@drawable/outline_arrow_drop_down_circle_24"
+
+        android:inputType="text"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="165dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="307dp"
+        android:background="@drawable/custom_input3"
+        android:drawableEnd="@drawable/outline_arrow_drop_down_circle_24"
+        android:ems="10"
+        android:hint="Début"
+        android:inputType="text"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:id="@+id/editTextText5"
+        android:layout_width="165dp"
+        android:layout_height="52dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="307dp"
+        android:background="@drawable/custom_input3"
+        android:drawableEnd="@drawable/outline_arrow_drop_down_circle_24"
+        android:ems="10"
+        android:hint="Fin"
+        android:inputType="text"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="347dp"
+        android:layout_height="121dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="127dp"
+        android:background="@drawable/custom_input3"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Tapez votre plainte ici ..."
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#6798E1"
+        android:text="Reserver" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="54dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="X"
+        android:textColor="#6798E1"
+        android:textSize="40dp"
+        />
+
+</RelativeLayout>

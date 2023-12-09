@@ -13,7 +13,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class Rendez_vous extends AppCompatActivity {
     FirebaseAuth auth;
-    Button button, btn_Home;
+    Button button, btn_Home, rdv_2;
 
     TextView textView;
     FirebaseUser User;
@@ -25,6 +25,7 @@ public class Rendez_vous extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         button = findViewById(R.id.logout);
         User = auth.getCurrentUser();
+        rdv_2 = ( Button) findViewById(R.id.rdv_2);
         btn_Home = ( Button ) findViewById(R.id.Home);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +34,12 @@ public class Rendez_vous extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), MainActivity4.class);
                 startActivity(intent);
                 finish();
+            }
+        });
+        rdv_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openRdv_2();
             }
         });
 
@@ -45,6 +52,11 @@ public class Rendez_vous extends AppCompatActivity {
     }
     public void openHome(){
         Intent intent = new Intent(this,WelcomingPage.class);
+        startActivity(intent);
+        finish();
+    }
+    public void openRdv_2(){
+        Intent intent = new Intent(this,Rendez_vous2.class);
         startActivity(intent);
         finish();
     }

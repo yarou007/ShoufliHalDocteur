@@ -50,7 +50,6 @@
 
     <ImageView
         android:id="@+id/imageView9"
-
         android:layout_width="355dp"
         android:layout_height="98dp"
         android:layout_alignParentStart="true"
@@ -99,7 +98,7 @@
         app:srcCompat="@drawable/greybox" />
 
     <Button
-        android:id="@+id/btn_profile"
+        android:id="@+id/rdv_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -107,7 +106,7 @@
         android:layout_marginStart="13dp"
         android:backgroundTint="#BABABA"
         android:textSize="18dp"
-        android:text="Profile" />
+        android:text="Rdv 2" />
 
     <Button
         android:id="@+id/Home"
@@ -116,7 +115,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:textSize="18dp"
-
         android:backgroundTint="#BABABA"
         android:text="Home" />
 
@@ -129,7 +127,6 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="0dp"
         android:textSize="18dp"
-
         android:backgroundTint="#BABABA"
         android:text="Logout" />
 
