@@ -2,13 +2,11 @@ package com.example.shouflihaldocteurv3;
 
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -25,19 +23,13 @@ public class Rendez_vous2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rendez_vous);
+        setContentView(R.layout.activity_rendez_vous2);
 
 
         auth = FirebaseAuth.getInstance();
         button = findViewById(R.id.logout);
         User = auth.getCurrentUser();
-        rdv22 = ( Button) findViewById(R.id.Rdv);
-        rdv22.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openRdv1();
-            }
-        });
+
 
         btn_Home = ( Button ) findViewById(R.id.Home);
         button.setOnClickListener(new View.OnClickListener() {
@@ -49,15 +41,24 @@ public class Rendez_vous2 extends AppCompatActivity {
                 finish();
             }
         });
-
         btn_Home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openHome();
             }
         });
+
+
+        rdv22 = ( Button) findViewById(R.id.rdv);
+        rdv22.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openRdv1();
+            }
+        });
     }
-    public void openHome(){
+
+   public void openHome(){
         Intent intent = new Intent(this,WelcomingPage.class);
         startActivity(intent);
         finish();

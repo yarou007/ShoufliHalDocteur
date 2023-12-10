@@ -56,7 +56,7 @@ public class Rendez_vous extends AppCompatActivity {
         finish();
     }
     public void openRdv_2(){
-        Intent intent = new Intent(this,Rendez_vous2.class);
+        Intent intent = new Intent(this, Rendez_vous2.class);
         startActivity(intent);
         finish();
     }

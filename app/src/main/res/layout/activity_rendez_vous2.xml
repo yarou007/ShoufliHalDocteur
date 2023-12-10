@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/greybox" />
 
     <Button
-        android:id="@+id/Rdv"
+        android:id="@+id/rdv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

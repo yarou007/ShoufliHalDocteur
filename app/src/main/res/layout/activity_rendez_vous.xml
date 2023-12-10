@@ -106,7 +106,7 @@
         android:layout_marginStart="13dp"
         android:backgroundTint="#BABABA"
         android:textSize="18dp"
-        android:text="Rdv 2" />
+        android:text="Rdv2" />
 
     <Button
         android:id="@+id/Home"
